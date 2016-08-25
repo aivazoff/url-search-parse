@@ -1,4 +1,5 @@
-# JavaScript url search parse function 
+# urlSearchParse(searchString)
+## JavaScript url search parse function 
 
 ```javascript
 
