@@ -1,4 +1,4 @@
-# JavaScript url search parse function
+# JavaScript url search parse function urlSearchParse(searchString)
 
 ```javascript
 
