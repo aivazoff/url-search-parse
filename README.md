@@ -1,4 +1,4 @@
-# urlSearchParse
+# JavaScript url search parse
 
 ```javascript
 
