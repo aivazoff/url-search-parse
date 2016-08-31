@@ -37,7 +37,7 @@ function urlSearchParse(search)
         childKeys.forEach(function(childKey, childKeyIndex){
 
             if(isEmpty(childKey)) {
-                var _positionKey = childKeys[childKeyIndex - 1] + '-' + childKeyIndex;
+                var _positionKey = childKeys.slice(0, childKeyIndex + 1).join('-') + '-' + childKeyIndex;
                 if(isUndefined(arrKeys[_positionKey])) { arrKeys[_positionKey] = -1; }
                 childKey = childKeys[childKeyIndex] = ++arrKeys[_positionKey];
             }
