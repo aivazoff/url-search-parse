@@ -24,7 +24,7 @@ function urlSearchParse(search)
 
         var key = param[0],
             val = param[1],
-            match = key.match(/^(\w+)((\[[^\]]*\])*)$/),
+            match = key.match(/^([\w-]+)((\[[^\]]*\])*)$/),
             childKeys = [match[1]],
             _res = result;
 
