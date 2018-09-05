@@ -7,7 +7,7 @@ function urlSearchParse(search)
 {
     var result = {},
         arrKeys = {},
-        params = decodeURIComponent(search).split('&'),
+        params = decodeURIComponent(search.replace(/^\?/, '')).split('&'),
         isUndefined = function(val) {
             return typeof(val) === 'undefined';
         },
@@ -24,8 +24,8 @@ function urlSearchParse(search)
 
         var key = param[0],
             val = param[1],
-            match = key.match(/^([\w-]+)((\[[^\]]*\])*)$/),
-            childKeys = [match[1]],
+            match = key.match(/^([\w-]+)((\[[^\]]*\])*)$/) || [],
+            childKeys = match[1] ? [match[1]] : [],
             _res = result;
 
         if(match[2]) {
