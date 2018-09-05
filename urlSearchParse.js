@@ -1,10 +1,12 @@
 /**
  *
- * @param {string} search
+ * @param {string?} search
  * @return {{}}
  */
 function urlSearchParse(search)
 {
+    search = search || location.search;
+
     var result = {},
         arrKeys = {},
         params = decodeURIComponent(search.replace(/^\?/, '')).split('&'),
