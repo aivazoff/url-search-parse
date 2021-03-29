@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/armd-pro/url-search-parse.git"
+    "url": "git+https://github.com/aivazoff/url-search-parse.git"
   },
   "author": "Arman Badalyan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/armd-pro/url-search-parse/issues"
+    "url": "https://github.com/aivazoff/url-search-parse/issues"
   },
-  "homepage": "https://github.com/armd-pro/url-search-parse#readme"
+  "homepage": "https://github.com/aivazoff/url-search-parse#readme"
 }
